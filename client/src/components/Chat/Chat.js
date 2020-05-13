@@ -20,7 +20,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState('');
   const [message, setMessage] = useState('');
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = '/';
+  const ENDPOINT = 'https://arcane-headland-63367.herokuapp.com/';
 
   useEffect(() => {
     const { name, room, pass } = queryString.parse(location.search);
